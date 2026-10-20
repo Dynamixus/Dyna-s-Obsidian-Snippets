@@ -1,0 +1,469 @@
+/* @settings
+
+name: Custom Styling - Outline Headings
+id: outline-heading-styles
+settings:
+    -
+        id: heading-global-icons
+        title: Global Icon Settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: outline-icon-inherit
+        title: Inherit heading color for collapse icon
+        type: class-toggle
+        default: true
+    -
+        id: outline-icon-opacity
+        title: Collapse Icon Opacity
+        type: variable-number-slider
+        min: 0
+        max: 1
+        step: 0.05
+        default: 0.8
+
+    -
+        id: heading-custom-colors
+        title: Custom Heading Colors
+        description: Enable the toggle to override the theme's heading colors with the pickers below. When off, the theme's colors are used and the pickers have no effect.
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: outline-custom-colors
+        title: Use custom heading colors
+        type: class-toggle
+        default: false
+    -
+        id: outline-h1-color
+        title: H1 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#be3a47'
+        default-dark: '#e06c75'
+    -
+        id: outline-h2-color
+        title: H2 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b5651d'
+        default-dark: '#d19a66'
+    -
+        id: outline-h3-color
+        title: H3 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a67c00'
+        default-dark: '#e5c07b'
+    -
+        id: outline-h4-color
+        title: H4 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#4e8a2e'
+        default-dark: '#98c379'
+    -
+        id: outline-h5-color
+        title: H5 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a8a96'
+        default-dark: '#56b6c2'
+    -
+        id: outline-h6-color
+        title: H6 Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2f7fc4'
+        default-dark: '#61afef'
+
+    -
+        id: heading-h1
+        title: Heading 1 (H1)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h1-enable
+        title: Enable Custom H1 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h1-font-family
+        title: H1 Font Family
+        description: Leave blank to inherit default
+        type: variable-text
+        default: ""
+    -
+        id: h1-font-size
+        title: H1 Font Size
+        type: variable-text
+        default: "1.2em"
+    -
+        id: h1-font-weight
+        title: H1 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 700
+    -
+        id: h1-font-style
+        title: H1 Font Style
+        type: variable-select
+        default: normal
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+
+    -
+        id: heading-h2
+        title: Heading 2 (H2)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h2-enable
+        title: Enable Custom H2 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h2-font-family
+        title: H2 Font Family
+        type: variable-text
+        default: ""
+    -
+        id: h2-font-size
+        title: H2 Font Size
+        type: variable-text
+        default: "1.1em"
+    -
+        id: h2-font-weight
+        title: H2 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 600
+    -
+        id: h2-font-style
+        title: H2 Font Style
+        type: variable-select
+        default: normal
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+
+    -
+        id: heading-h3
+        title: Heading 3 (H3)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h3-enable
+        title: Enable Custom H3 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h3-font-family
+        title: H3 Font Family
+        type: variable-text
+        default: ""
+    -
+        id: h3-font-size
+        title: H3 Font Size
+        type: variable-text
+        default: "1em"
+    -
+        id: h3-font-weight
+        title: H3 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 500
+    -
+        id: h3-font-style
+        title: H3 Font Style
+        type: variable-select
+        default: normal
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+
+    -
+        id: heading-h4
+        title: Heading 4 (H4)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h4-enable
+        title: Enable Custom H4 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h4-font-family
+        title: H4 Font Family
+        type: variable-text
+        default: ""
+    -
+        id: h4-font-size
+        title: H4 Font Size
+        type: variable-text
+        default: "0.95em"
+    -
+        id: h4-font-weight
+        title: H4 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 400
+    -
+        id: h4-font-style
+        title: H4 Font Style
+        type: variable-select
+        default: normal
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+
+    -
+        id: heading-h5
+        title: Heading 5 (H5)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h5-enable
+        title: Enable Custom H5 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h5-font-family
+        title: H5 Font Family
+        type: variable-text
+        default: ""
+    -
+        id: h5-font-size
+        title: H5 Font Size
+        type: variable-text
+        default: "0.9em"
+    -
+        id: h5-font-weight
+        title: H5 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 400
+    -
+        id: h5-font-style
+        title: H5 Font Style
+        type: variable-select
+        default: italic
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+
+    -
+        id: heading-h6
+        title: Heading 6 (H6)
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h6-enable
+        title: Enable Custom H6 Styling
+        type: class-toggle
+        default: true
+    -
+        id: h6-font-family
+        title: H6 Font Family
+        type: variable-text
+        default: ""
+    -
+        id: h6-font-size
+        title: H6 Font Size
+        type: variable-text
+        default: "0.85em"
+    -
+        id: h6-font-weight
+        title: H6 Font Weight
+        type: variable-number-slider
+        min: 100
+        max: 900
+        step: 100
+        default: 400
+    -
+        id: h6-font-style
+        title: H6 Font Style
+        type: variable-select
+        default: italic
+        options:
+            - label: None
+              value: normal
+            - label: Italic
+              value: italic
+            - label: Oblique
+              value: oblique
+*/
+
+/* =========================================
+   COLOR RESOLUTION
+   Default: the theme's heading colors.
+   With "Use custom heading colors" on: the
+   Style Settings picker value, or the snippet's
+   own default if the picker was never saved.
+   ========================================= */
+body {
+    --outline-h1-resolved: var(--h1-color, #e06c75);
+    --outline-h2-resolved: var(--h2-color, #d19a66);
+    --outline-h3-resolved: var(--h3-color, #e5c07b);
+    --outline-h4-resolved: var(--h4-color, #98c379);
+    --outline-h5-resolved: var(--h5-color, #56b6c2);
+    --outline-h6-resolved: var(--h6-color, #61afef);
+}
+
+/* Built-in defaults for the custom colors (keep in sync with the
+   default-light / default-dark values in the @settings block) */
+body.theme-light {
+    --outline-h1-default: #be3a47;
+    --outline-h2-default: #b5651d;
+    --outline-h3-default: #a67c00;
+    --outline-h4-default: #4e8a2e;
+    --outline-h5-default: #2a8a96;
+    --outline-h6-default: #2f7fc4;
+}
+
+body.theme-dark {
+    --outline-h1-default: #e06c75;
+    --outline-h2-default: #d19a66;
+    --outline-h3-default: #e5c07b;
+    --outline-h4-default: #98c379;
+    --outline-h5-default: #56b6c2;
+    --outline-h6-default: #61afef;
+}
+
+body.outline-custom-colors {
+    --outline-h1-resolved: var(--outline-h1-color, var(--outline-h1-default));
+    --outline-h2-resolved: var(--outline-h2-color, var(--outline-h2-default));
+    --outline-h3-resolved: var(--outline-h3-color, var(--outline-h3-default));
+    --outline-h4-resolved: var(--outline-h4-color, var(--outline-h4-default));
+    --outline-h5-resolved: var(--outline-h5-color, var(--outline-h5-default));
+    --outline-h6-resolved: var(--outline-h6-color, var(--outline-h6-default));
+}
+
+/* =========================================
+   GLOBAL ICON STYLES
+   ========================================= */
+/* Apply opacity slider to the icon container */
+.workspace-leaf-content[data-type="outline"] .tree-item-self .tree-item-icon {
+    opacity: var(--outline-icon-opacity, 0.8) !important;
+}
+
+/* =========================================
+   HEADING LEVEL STYLES
+   ========================================= */
+
+/* HEADING 1 */
+body.h1-enable .workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h1-resolved);
+    font-family: var(--h1-font-family, inherit);
+    font-size: var(--h1-font-size, 1.2em);
+    font-weight: var(--h1-font-weight, 700);
+    font-style: var(--h1-font-style, normal);
+}
+/* TARGET THE SVG DIRECTLY */
+body.h1-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h1-resolved) !important;
+}
+
+/* HEADING 2 */
+body.h2-enable .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h2-resolved);
+    font-family: var(--h2-font-family, inherit);
+    font-size: var(--h2-font-size, 1.1em);
+    font-weight: var(--h2-font-weight, 600);
+    font-style: var(--h2-font-style, normal);
+}
+body.h2-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h2-resolved) !important;
+}
+
+/* HEADING 3 */
+body.h3-enable .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h3-resolved);
+    font-family: var(--h3-font-family, inherit);
+    font-size: var(--h3-font-size, 1em);
+    font-weight: var(--h3-font-weight, 500);
+    font-style: var(--h3-font-style, normal);
+}
+body.h3-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h3-resolved) !important;
+}
+
+/* HEADING 4 */
+body.h4-enable .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h4-resolved);
+    font-family: var(--h4-font-family, inherit);
+    font-size: var(--h4-font-size, 0.95em);
+    font-weight: var(--h4-font-weight, 400);
+    font-style: var(--h4-font-style, normal);
+}
+body.h4-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h4-resolved) !important;
+}
+
+/* HEADING 5 */
+body.h5-enable .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h5-resolved);
+    font-family: var(--h5-font-family, inherit);
+    font-size: var(--h5-font-size, 0.9em);
+    font-weight: var(--h5-font-weight, 400);
+    font-style: var(--h5-font-style, italic);
+}
+body.h5-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h5-resolved) !important;
+}
+
+/* HEADING 6 */
+body.h6-enable .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-inner {
+    color: var(--outline-h6-resolved);
+    font-family: var(--h6-font-family, inherit);
+    font-size: var(--h6-font-size, 0.85em);
+    font-weight: var(--h6-font-weight, 400);
+    font-style: var(--h6-font-style, italic);
+}
+body.h6-enable.outline-icon-inherit .workspace-leaf-content[data-type="outline"] .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item:not(.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item) > .tree-item-self .tree-item-icon svg.svg-icon {
+    color: var(--outline-h6-resolved) !important;
+}
